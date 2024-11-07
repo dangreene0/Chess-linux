@@ -1,3 +1,18 @@
+# Chess Linux
+This is my own personal attempt at working with a Obj-C/++ program in GNUStep. 
+
+If you would like to play the full thing there is a [fully compiled version available.](https://launchpad.net/ubuntu/jammy/+package/chess.app)
+
+# Build Instructions
+1. Works best with `bash`.
+2. Install dependencies: `sudo apt-get install gnustep-devel gobjc++`
+3. Compile: ``g++ `gnustep-config --objc-flags --gui-libs` -o Chess main.mm -L /usr/include/GNUstep/ -lobjc -lgnustep-base -lgnustep-gui``
+
+# Known issues
+- App runs but displays errors about locating resources
+- `MBCDebug.cp` and `MBCDebug.h` give `undefined reference error`
+
+# Original Description
 This is the source code for Apple's Chess.app Version 3.0, as shipped
 in MacOS X 10.8. This project consists of two components:
 The Chess engine, "sjeng", and the graphical frontend.

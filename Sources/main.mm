@@ -54,9 +54,9 @@ int main(int argc, const char *argv[])
 {
 	while (argv[1])
 		putenv((char *)*++argv);
-    MBCDebug::Update();
-	if (MBCDebug::LogStart())
-		NSLog(@"Chess starting\n");
+    // MBCDebug::Update();
+	// if (MBCDebug::LogStart())
+	// 	NSLog(@"Chess starting\n");
 	//
 	// We set defaults that influence NSApplication init, so we need to run now
 	//
